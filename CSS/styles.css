@@ -1,0 +1,67 @@
+@import url('reset.css');
+
+body {
+    background-color: black;
+    /*muda a cor do backgrund do site*/
+}
+
+h2 {
+    color: #33A8DB;
+    font-size: 2rem;
+    /*Nesse caso, o valor 2rem significa que o tamanho da fonte será igual a duas vezes o tamanho da fonte do elemento pai, especificado em unidades de rem.*/
+    font-weight: bold;
+    /*A declaração font-weight: bold; no CSS é usada para definir o peso da fonte como negrito para o elemento alvo. Isso significa que o texto dentro desse elemento será exibido com uma variação mais forte da fonte padrão, dando a aparência de "negrito".*/
+    letter-spacing: 4px;
+    /*A declaração letter-spacing: 4px; no CSS é usada para definir o espaçamento entre as letras (também conhecido como kerning) para o texto dentro do elemento alvo. Nesse caso, o valor 4px especifica que cada letra terá um espaçamento adicional de 4 pixels entre elas.*/
+    text-transform: uppercase;
+    /*A declaração text-transform: uppercase; no CSS é usada para transformar o texto dentro do elemento alvo em letras maiúsculas.*/
+    margin-bottom: 24px;
+    /*A declaração margin-bottom: 24px; no CSS é usada para definir a margem inferior de um elemento. Nesse caso, o valor 24px especifica que haverá um espaço de 24 pixels entre a parte inferior do elemento e o próximo elemento abaixo dele.*/
+
+}
+
+p {
+    color: white;
+}
+
+section {
+    margin: 100px auto;
+    /*Essa regra CSS para a tag section define a margem superior e inferior como 100px e a margem esquerda e direita como auto.*/
+}
+
+.banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(49, 168, 221, .2), rgba(0, 0, 0, .6)), url('../images/banner.png');
+    /*Define um gradiente linear como parte do fundo. O gradiente vai de preto semi-transparente (rgba(0, 0, 0, .6)) para uma cor de azul claro semi-transparente (rgba(49, 168, 221, .2)) e volta para preto semi-transparente. Esse gradiente cria uma sobreposição de cores no fundo.*/
+    background-size: cover;
+    /*Quando você define background-size: cover;, a imagem de fundo será dimensionada de forma a cobrir completamente o elemento, mantendo sua proporção original. Isso significa que a imagem pode ser cortada (cortada) se necessário para garantir que o elemento esteja completamente preenchido.*/
+    background-repeat: no-repeat;
+    /*Quando você define background-repeat: no-repeat;, a imagem de fundo será exibida apenas uma vez no elemento, sem repeti-la. Se a imagem de fundo for menor que o elemento, ela será exibida apenas uma vez e o restante do espaço será deixado em branco.*/
+    height: 600px;
+    /*A propriedade height: 600px; no CSS é usada para definir a altura de um elemento em pixels. Neste caso específico, a altura do elemento alvo será definida como 600 pixels.*/
+    padding-top: 60px;
+    /*A propriedade padding-top: 60px; no CSS é usada para definir o preenchimento (espaço vazio) na parte superior de um elemento. Nesse caso, o valor 60px especifica que haverá um espaço de preenchimento de 60 pixels na parte superior do elemento.*/
+    border-bottom: 1px solid #33A8DB80;
+    /*A propriedade border-bottom: 1px solid #33A8DB80; no CSS é usada para adicionar uma borda na parte inferior de um elemento.*/
+}
+
+.banner .banner-content{
+    color:white;
+    width:600px;
+    margin:auto; /* com a margin auto ele centraliza o conteinner*/
+    text-align: center;
+}
+
+.banner h1{
+    font-size: 2.5rem;
+    font-weight: 900; /*A propriedade font-weight: 900; no CSS é usada para definir o peso da fonte de um elemento. Nesse caso, o valor 900 indica um peso de fonte extra-bold ou ultra-negrito*/
+    text-transform: uppercase;
+    color: transparent;
+    background: -webkit-linear-gradient(#33A8DB, #1472B7); /*Essa regra CSS define um plano de fundo usando uma propriedade de gradiente linear específica do navegador WebKit (principalmente usado em navegadores como o Safari e versões antigas do Chrome). A propriedade -webkit-linear-gradient é uma função que cria um gradiente linear que se estende em uma direção específica, variando a cor gradualmente ao longo dessa direção.*/
+    background-clip: text; /*A propriedade background-clip: text; no CSS é usada para definir como o plano de fundo é exibido em relação ao texto dentro de um elemento. Quando você define background-clip: text;, o plano de fundo é recortado para o texto dentro do elemento. Isso significa que o plano de fundo só é visível onde o texto está presente, e o restante do plano de fundo é oculto.*/
+    -webkit-background-clip: text;/*A propriedade -webkit-background-clip: text; é uma variação específica do navegador WebKit da propriedade background-clip. Ela funciona de maneira semelhante à versão padrão, mas é aplicada apenas em navegadores que usam o motor de layout WebKit (como Safari e versões antigas do Chrome). Quando você define -webkit-background-clip: text;, o plano de fundo é recortado para o texto dentro do elemento, assim como com background-clip: text;. Isso significa que o plano de fundo só é visível onde o texto está presente, e o restante do plano de fundo é oculto. Essa técnica é usada para criar efeitos visuais interessantes, como texto com preenchimento de imagem ou texto com gradientes, especificamente em navegadores que suportam a propriedade -webkit-background-clip. Assim como com a versão padrão, é importante testar em diferentes navegadores para garantir uma experiência consistente.*/
+}
+
+.banner p {
+    font-size: 1.25rem;
+    margin: 16px 0 24px; /*16px: Define a margem superior como 16 pixels. 0: Define a margem direita e esquerda como 0, o que significa que não haverá margem nessas direções. 24px: Define a margem inferior como 24 pixels.*/
+}

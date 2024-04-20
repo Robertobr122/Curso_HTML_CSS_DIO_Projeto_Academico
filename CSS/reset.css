@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway+Dots&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: 'Raleway', sans-serif;
+    /*Qual será a fonte primaria e qual será a secundária*/
+    box-sizing: border-box;
+    /* é uma propriedade usada para definir como o tamanho total de um elemento. box-sizing: border-box;, o navegador calcula o tamanho total do elemento incluindo o preenchimento e a borda, em vez de calcular o tamanho total apenas com base no conteúdo.*/
+    margin: 0;
+    /*
+    Essa declaração margin: 0; no CSS é usada para definir que nenhum espaço de margem deve ser aplicado ao elemento alvo. Isso significa que não haverá espaço em branco ao redor do elemento, nem no topo, nem na parte inferior, nem nos lados.*/
+}
