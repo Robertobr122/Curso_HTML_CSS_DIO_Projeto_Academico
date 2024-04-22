@@ -44,24 +44,127 @@ section {
     /*A propriedade border-bottom: 1px solid #33A8DB80; no CSS é usada para adicionar uma borda na parte inferior de um elemento.*/
 }
 
-.banner .banner-content{
-    color:white;
-    width:600px;
-    margin:auto; /* com a margin auto ele centraliza o conteinner*/
+.banner .banner-content {
+    color: white;
+    width: 600px;
+    margin: auto;
+    /* com a margin auto ele centraliza o conteinner*/
     text-align: center;
 }
 
-.banner h1{
+.banner h1 {
     font-size: 2.5rem;
-    font-weight: 900; /*A propriedade font-weight: 900; no CSS é usada para definir o peso da fonte de um elemento. Nesse caso, o valor 900 indica um peso de fonte extra-bold ou ultra-negrito*/
+    font-weight: 900;
+    /*A propriedade font-weight: 900; no CSS é usada para definir o peso da fonte de um elemento. Nesse caso, o valor 900 indica um peso de fonte extra-bold ou ultra-negrito*/
     text-transform: uppercase;
     color: transparent;
-    background: -webkit-linear-gradient(#33A8DB, #1472B7); /*Essa regra CSS define um plano de fundo usando uma propriedade de gradiente linear específica do navegador WebKit (principalmente usado em navegadores como o Safari e versões antigas do Chrome). A propriedade -webkit-linear-gradient é uma função que cria um gradiente linear que se estende em uma direção específica, variando a cor gradualmente ao longo dessa direção.*/
-    background-clip: text; /*A propriedade background-clip: text; no CSS é usada para definir como o plano de fundo é exibido em relação ao texto dentro de um elemento. Quando você define background-clip: text;, o plano de fundo é recortado para o texto dentro do elemento. Isso significa que o plano de fundo só é visível onde o texto está presente, e o restante do plano de fundo é oculto.*/
-    -webkit-background-clip: text;/*A propriedade -webkit-background-clip: text; é uma variação específica do navegador WebKit da propriedade background-clip. Ela funciona de maneira semelhante à versão padrão, mas é aplicada apenas em navegadores que usam o motor de layout WebKit (como Safari e versões antigas do Chrome). Quando você define -webkit-background-clip: text;, o plano de fundo é recortado para o texto dentro do elemento, assim como com background-clip: text;. Isso significa que o plano de fundo só é visível onde o texto está presente, e o restante do plano de fundo é oculto. Essa técnica é usada para criar efeitos visuais interessantes, como texto com preenchimento de imagem ou texto com gradientes, especificamente em navegadores que suportam a propriedade -webkit-background-clip. Assim como com a versão padrão, é importante testar em diferentes navegadores para garantir uma experiência consistente.*/
+    background: -webkit-linear-gradient(#33A8DB, #1472B7);
+    /*Essa regra CSS define um plano de fundo usando uma propriedade de gradiente linear específica do navegador WebKit (principalmente usado em navegadores como o Safari e versões antigas do Chrome). A propriedade -webkit-linear-gradient é uma função que cria um gradiente linear que se estende em uma direção específica, variando a cor gradualmente ao longo dessa direção.*/
+    background-clip: text;
+    /*A propriedade background-clip: text; no CSS é usada para definir como o plano de fundo é exibido em relação ao texto dentro de um elemento. Quando você define background-clip: text;, o plano de fundo é recortado para o texto dentro do elemento. Isso significa que o plano de fundo só é visível onde o texto está presente, e o restante do plano de fundo é oculto.*/
+    -webkit-background-clip: text;
+    /*A propriedade -webkit-background-clip: text; é uma variação específica do navegador WebKit da propriedade background-clip. Ela funciona de maneira semelhante à versão padrão, mas é aplicada apenas em navegadores que usam o motor de layout WebKit (como Safari e versões antigas do Chrome). Quando você define -webkit-background-clip: text;, o plano de fundo é recortado para o texto dentro do elemento, assim como com background-clip: text;. Isso significa que o plano de fundo só é visível onde o texto está presente, e o restante do plano de fundo é oculto. Essa técnica é usada para criar efeitos visuais interessantes, como texto com preenchimento de imagem ou texto com gradientes, especificamente em navegadores que suportam a propriedade -webkit-background-clip. Assim como com a versão padrão, é importante testar em diferentes navegadores para garantir uma experiência consistente.*/
 }
 
 .banner p {
     font-size: 1.25rem;
-    margin: 16px 0 24px; /*16px: Define a margem superior como 16 pixels. 0: Define a margem direita e esquerda como 0, o que significa que não haverá margem nessas direções. 24px: Define a margem inferior como 24 pixels.*/
+    margin: 16px 0 24px;
+    /*16px: Define a margem superior como 16 pixels. 0: Define a margem direita e esquerda como 0, o que significa que não haverá margem nessas direções. 24px: Define a margem inferior como 24 pixels.*/
 }
+
+.banner .logo {
+    background-color: rgba(0, 0, 0, .2);
+    /* background-color: rgba(0, 0, 0, .2); no CSS é usada para definir a cor de fundo de um elemento com transparência. Nesse caso, a cor de fundo é preta com uma transparência de 20%.*/
+    height: 260px;
+    width: 260px;
+    margin: auto;
+    border-radius: 50%;
+    padding: 16px;
+    /*A declaração padding: 16px; no CSS é usada para definir o preenchimento (espaço vazio) em todos os lados de um elemento. Nesse caso, o valor 16px especifica que haverá um espaço de preenchimento de 16 pixels em todos os lados do elemento. Isso significa que haverá um espaço uniforme de 16 pixels entre o conteúdo dentro do elemento e suas bordas. */
+}
+
+.banner .logo img {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /*A propriedade object-fit: contain; no CSS é usada para especificar como um elemento <img> ou <video> deve se ajustar ao tamanho do seu contêiner, mantendo sua proporção original. Quando você define object-fit: contain;, o conteúdo (imagem ou vídeo) é ajustado para caber dentro do contêiner, mantendo a proporção original.*/
+}
+
+.banner .banner-content button {
+    color: #31A8DD;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 16px 32px;
+    letter-spacing: 4px;
+    /*A declaração letter-spacing: 4px; no CSS é usada para ajustar o espaçamento entre as letras em um texto. Nesse caso, o valor 4px especifica que haverá um espaçamento adicional de 4 pixels entre cada letra.*/
+    border-image: linear-gradient(#3BA1CD, #1572B7);
+    /*A propriedade border-image no CSS permite que você especifique uma imagem como uma borda de um elemento. No entanto, a sintaxe que você forneceu utiliza um gradiente linear em vez de uma imagem real. Essa declaração aplica um gradiente linear como a borda do elemento. O gradiente começa com a cor #3BA1CD e termina com a cor #1572B7.*/
+    border-image-slice: 10;
+    /*A propriedade border-image-slice no CSS é usada para dividir a imagem da borda em nove partes, permitindo que você defina como a imagem da borda é dividida e dimensionada ao redor do elemento. O valor numérico que você forneceu, 10, especifica o tamanho da fatia da imagem da borda em unidades de comprimento (por exemplo, pixels). Isso indica que a imagem da borda será dividida em fatias de 10 unidades de comprimento.*/
+    border-radius: 30px;
+    /*A propriedade border-radius no CSS é usada para definir o raio dos cantos de um elemento, tornando-os arredondados. Nesse caso, 30px define o raio dos cantos como 30 pixels. Quando você define border-radius: 30px;, todos os cantos do elemento serão arredondados com um raio de 30 pixels.*/
+}
+
+#course-content {
+    width: 800px;
+    text-align: center;
+}
+
+#course-content .modules-list {
+    margin: 24px 0;
+}
+
+#course-content .modules-list .module span {
+    color: #33A8DB;
+}
+
+
+
+#course-content .modules-list .module {
+    color: white;
+    width: 530px;
+    margin: 0 auto 24px;
+    border: 1px solid #33A8DB;
+    background-color: #252525;
+    padding: 16px;
+    border-radius: 100px;
+    box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+    /*A propriedade box-shadow no CSS é usada para adicionar sombras a um elemento. A sintaxe que você forneceu cria uma sombra interna no elemento, o que significa que a sombra é aplicada dentro das bordas do elemento.inset: Indica que a sombra será aplicada dentro do elemento.
+-5px: Especifica o deslocamento horizontal da sombra em relação ao elemento. Nesse caso, a sombra será deslocada 5 pixels para a esquerda do elemento.
+6px: Especifica o deslocamento vertical da sombra em relação ao elemento. Nesse caso, a sombra será deslocada 6 pixels para baixo do elemento.
+8px: Especifica o raio do desfoque da sombra. Quanto maior o valor, mais difusa será a sombra.
+rgba(0, 0, 0, .7): Define a cor da sombra. Nesse caso, é uma sombra preta com uma opacidade de 70%.*/
+}
+
+#course-content .modules-list .module span {
+    color: #33A8DB;
+}
+
+#transform-world {
+    height: 560px;
+    background-size: cover;
+    background-image: url("/images/woman-code.png");
+    background-attachment: fixed;/*A propriedade background-attachment no CSS é usada para definir se uma imagem de fundo deve rolar junto com o conteúdo da página ou permanecer fixa em sua posição enquanto o conteúdo é rolado. Quando você define background-attachment: fixed;, a imagem de fundo permanece fixa em sua posição em relação à janela de visualização do navegador. Isso significa que, à medida que o usuário rola o conteúdo da página, a imagem de fundo permanece no mesmo lugar na janela do navegador, criando um efeito de paralaxe.*/
+    border-top: 1px solid #33A8DB80;
+    border-bottom: 1px solid #33A8DB80;
+    padding: 200px;
+}
+
+#transform-world p {
+    font-weight: 900;/*A declaração font-weight: 900; no CSS é usada para definir o peso da fonte de um elemento como "extra bold" ou "ultra negrito". */
+    font-size: 2.5rem;
+    text-transform: lowercase;
+    max-width: 250px; /*A declaração max-width: 250px; no CSS é usada para definir a largura máxima de um elemento. Nesse caso, o valor 250px especifica que a largura máxima do elemento alvo será de 250 pixels. Essa propriedade é útil quando você deseja garantir que um elemento não ultrapasse um determinado tamanho, mesmo que o conteúdo dentro dele seja maior. Se o conteúdo dentro do elemento exceder a largura máxima especificada, o elemento se ajustará automaticamente para que seu conteúdo seja visível, mas não ultrapasse o limite estabelecido.*/
+    text-shadow: 3px 2px #33A8DB; 
+
+
+
+
+}
+
+
+
+  
